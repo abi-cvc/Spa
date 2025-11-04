@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spa</title>
+    <title>SPA - Todos</title>
+    <!-- Enlazar el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="promociones.html">PROMOCIONES</a></li>
+                <li><a href="fotos.html">FOTOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="mapa.html">MAPA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="promociones.html">PROMOCIONES</a></li>
-                    <li><a href="fotos.html">FOTOS</a></li>
-                    <li><a href="servicios.html">SERVICIOS</a></li>
-                    <li><a href="mapa.html">MAPA</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
         <section>
             <h1>SPA - Todos</h1>
             <h2>Regálate un momento de paz y consiente a tu piel en el mejor lugar</h2>
@@ -25,16 +28,35 @@
 
         <section>
             <form action="/reservar" method="post">
-                <label for="reserva">RESERVA TU CITA</label>
-                <input type="text" id="reserva" name="reserva" required>
+                <label for="nombre">NOMBRE COMPLETO:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">CORREO ELECTRÓNICO:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">TELÉFONO:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">FECHA DE RESERVA:</label>
+                <input type="date" id="fecha" name="fecha" required>
 
                 <label for="codigo">CÓDIGO PROMOCIONAL:</label>
                 <input type="text" id="codigo" name="codigo" placeholder="CÓDIGO">
 
-                <button type="submit">Enviar</button>
+                <button type="submit">RESERVAR</button>
             </form>
         </section>
     </main>
-    
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">POLÍTICAS</a></li>
+                <li><a href="#">TÉRMINOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">REDES SOCIALES</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
