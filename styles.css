@@ -131,6 +131,7 @@ nav {
     gap: 40px;
     padding: 70px 50px;
     flex-wrap: wrap;
+    background-color: #fff;
 }
 
 .service-card {
