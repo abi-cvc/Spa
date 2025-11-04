@@ -19,7 +19,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -28,6 +28,7 @@ nav {
     list-style: none;
     font-weight: 100;
     gap: 40px;
+    margin-left: 70px;
 }
 
 .menu li a {
@@ -84,7 +85,11 @@ nav {
 .hero {
     text-align: left;
     padding: 100px 20px;
-    background-color: #FFEFDF;
+    background-image: url('images/main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
 }
 
 .hero h1 {
@@ -100,9 +105,12 @@ nav {
     font-size: 32px;
     font-weight: 600;
     color: #000;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     margin-left: 175px;
+    margin-top: 20px;
+    white-space: pre-line;
+    text-align: left;
 }
 
 .hero h3 {
