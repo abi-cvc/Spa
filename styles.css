@@ -350,22 +350,25 @@ footer {
     text-align: center;
 }
 
-/*
+
 .footer-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     flex-wrap: wrap;
-}*/
+    align-items: center;
+    width: auto;
+    margin-left: 0;
+}
 
-.footer-links a {
+.footer-links a,
+.social p {
     color: #A3A656;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     transition: color 0.3s ease;
-
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
 }
@@ -374,17 +377,30 @@ footer {
     color: #FFFF00;
 }
 
-.social {
-    margin-top: 20px;
+/* Nuevo estilo para el contenedor del footer */
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 70px;
 }
 
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+/*
 .social p {
-    color: #FFEFDF;
+    color: #A3A656;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 15px;
-}
+    margin-bottom: 0; Eliminamos el margen inferior 
+}*/
 
 .social-icons {
     display: flex;
