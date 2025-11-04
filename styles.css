@@ -346,8 +346,9 @@ nav {
 /* Footer */
 footer {
     background-color: #384001;
-    padding: 40px 50px;
     text-align: center;
+    height: 97px;
+    padding: 0;
 }
 
 
@@ -383,7 +384,8 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-    padding: 20px 70px;
+    padding: 0px 70px 0 97px;
+    height: 100%;
 }
 
 .social {
@@ -417,8 +419,8 @@ footer {
 }
 
 .social-icons img {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
 }
 
