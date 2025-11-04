@@ -37,6 +37,20 @@
             <h1>SPA - Todos</h1>
             <h2>Regálate un momento de paz y consiente a tu piel en el mejor lugar</h2>
         </section>
+        
+        <section class="reservation-form">
+            <form action="/reservar" method="post">
+                <div class="form-group">
+                    <label for="reserva">RESERVA TU CITA:</label>
+                    <input type="text" id="reserva" name="reserva" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="codigo">CÓDIGO PROMOCIONAL:</label>
+                    <input type="text" id="codigo" name="codigo" placeholder="CÓDIGO">
+                </div>
+            </form>
+        </section>
 
         <section class="services">
             <div class="service-card">
@@ -74,22 +88,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="reservation-form">
-            <form action="/reservar" method="post">
-                <div class="form-group">
-                    <label for="reserva">RESERVA TU CITA:</label>
-                    <input type="text" id="reserva" name="reserva" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="codigo">CÓDIGO PROMOCIONAL:</label>
-                    <input type="text" id="codigo" name="codigo" placeholder="CÓDIGO">
-                </div>
-
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
         </section>
 
         <section class="membership">

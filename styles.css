@@ -183,19 +183,26 @@ nav {
 
 /* Reservation Form */
 .reservation-form {
-    background-color: #FFEFDF;
-    padding: 70px 50px;
-    text-align: center;
+    background-color: #F2F6F6;
+    padding: 20px 100px;
+    text-align: left;
 }
 
 .reservation-form form {
-    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .form-group label {
@@ -203,41 +210,29 @@ nav {
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #384001;
-    margin-bottom: 10px;
+    color: #384001; 
+    margin-bottom: 0;
 }
 
 .form-group input {
-    width: 100%;
+    width: 200px; 
     padding: 15px;
-    font-size: 16px;
-    border: 2px solid #A3A656;
-    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px; 
     background-color: #fff;
     color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group:nth-child(2) input {
+    width: 150px; 
 }
 
 .form-group input::placeholder {
     color: #9E9A9A;
     text-transform: uppercase;
-}
-
-.btn-enviar {
-    background-color: #A3A656;
-    color: #000;
-    border: none;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-enviar:hover {
-    background-color: #384001;
-    color: #FFEFDF;
+    padding-left: 5px;
 }
 
 /* Membership Section */
