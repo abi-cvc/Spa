@@ -261,6 +261,7 @@ nav {
 .membership {
     padding: 100px 50px;
     background-color: #F2F6F6;
+    min-height: 770px;
 }
 
 .membership-title {
@@ -274,73 +275,124 @@ nav {
 .membership-plans {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 
 .plan-card {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 35px;
-    padding: 40px 30px;
+    padding: 0;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
 .plan-icon {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 20px;
+    width: 255px; 
+    height: 255px;
+    margin: 0 auto 30px auto;
+    border-radius: 50%; 
+    border: 9px solid #384001;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+.plan-icon img {
+    /* Aseguramos que la imagen no exceda el tamaño del contenedor */
+    max-width: 60%; 
+    max-height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(0px);
+}
+
 
 .plan-card h3 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     color: #384001;
     margin-bottom: 30px;
+    text-transform: uppercase;
+
 }
 
 .plan-card ul {
-    list-style: none;
+    list-style: disc;
     margin-bottom: 30px;
     text-align: left;
+    width: auto; 
+    margin: 10px 0 0 50px; 
+    padding-left: 20px;
 }
 
 .plan-card ul li {
     font-size: 16px;
     font-weight: 400;
     color: #000;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    position: relative;
+    margin-bottom: 8px;
+    
+    padding-left: 20px; 
+    position: relative; 
+    list-style-type: none; 
+    color: #384001;
 }
 
 .plan-card ul li::before {
-    content: "¶";
+    content: "•"; 
     position: absolute;
     left: 0;
-    color: #A3A656;
+    top: 0;
+    color: #384001; 
     font-weight: 700;
 }
 
 .btn-condiciones {
     background-color: #A3A656;
-    color: #000;
+    color: #ffffff;
     border: none;
     padding: 12px 24px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 550;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 35px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .btn-condiciones:hover {
     background-color: #384001;
     color: #FFEFDF;
+}
+
+.plan-details {
+    list-style: disc; 
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px; 
+    width: fit-content;
+    margin: 0 auto; 
+}
+
+.plan-details li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 8px; 
+    padding-left: 0; 
+    position: static; 
+    list-style-type: disc; 
+    color: #384001; 
+}
+
+.plan-details li::before {
+    content: none;
 }
 
 /* Footer */
