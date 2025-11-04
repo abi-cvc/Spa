@@ -13,8 +13,8 @@ body {
 
 /* Header y Navegación */
 header {
-    background-color: #384001;
-    padding: 20px 50px;
+    background-color: #A3A656;
+    padding: 70px 70px;
 }
 
 nav {
@@ -26,10 +26,12 @@ nav {
 .menu {
     display: flex;
     list-style: none;
+    font-weight: 100;
     gap: 40px;
 }
 
 .menu li a {
+    font-family: 'Inter', sans-serif;
     color: #FFEFDF;
     text-decoration: none;
     font-size: 16px;
@@ -49,7 +51,7 @@ nav {
 }
 
 .user-account {
-    color: #FFEFDF;
+    color: #384001;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -80,13 +82,13 @@ nav {
 
 /* Hero Section */
 .hero {
-    text-align: center;
+    text-align: left;
     padding: 100px 20px;
     background-color: #FFEFDF;
 }
 
 .hero h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Romanesco', sans-serif;
     font-size: 96px;
     font-weight: 700;
     color: #384001;
@@ -97,9 +99,19 @@ nav {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    color: #384001;
+    color: #000;
     max-width: 800px;
     margin: 0 auto;
+    margin-left: 175px;
+}
+
+.hero h3 {
+    font-family: 'Romanesco', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 175px;
 }
 
 /* Services Section */
