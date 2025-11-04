@@ -86,7 +86,7 @@ nav {
 }
 
 .hero h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Romanesco', sans-serif;
     font-size: 96px;
     font-weight: 700;
     color: #384001;
@@ -97,9 +97,17 @@ nav {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    color: #384001;
+    color: #000;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.hero h3 {
+    font-family: 'Romanesco', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
 }
 
 /* Services Section */
