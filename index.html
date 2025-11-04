@@ -4,59 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA - Todos</title>
-    <!-- Enlazar el archivo CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="promociones.html">PROMOCIONES</a></li>
                 <li><a href="fotos.html">FOTOS</a></li>
                 <li><a href="servicios.html">SERVICIOS</a></li>
                 <li><a href="mapa.html">MAPA</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
+            <div class="user-language">
+                <a href="#" class="user-account">
+                    <img src="images/user.png" alt="Usuario" class="icon-user">
+                    Mi cuenta
+                </a>
+                <span class="language">
+                    <img src="images/flag.png" alt="Idioma" class="icon-flag">
+                    ES
+                </span>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="hero">
             <h1>SPA - Todos</h1>
             <h2>Regálate un momento de paz y consiente a tu piel en el mejor lugar</h2>
         </section>
 
-        <section>
+        <section class="services">
+            <div class="service-card">
+                <img src="images/relajante.png" alt="Masaje relajante" class="service-image">
+                <div class="service-content">
+                    <h3>Masaje relajante</h3>
+                    <p>Esta es una descripción de la opción en cuestión .....</p>
+                    <div class="service-footer">
+                        <span class="price">$60</span>
+                        <button class="btn-reservar">RESERVAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="images/pies.png" alt="Masaje de pies" class="service-image">
+                <div class="service-content">
+                    <h3>Masaje de pies</h3>
+                    <p>Esta es una descripción de la opción en cuestión .....</p>
+                    <div class="service-footer">
+                        <span class="price">$65</span>
+                        <button class="btn-reservar">RESERVAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="images/bambu.png" alt="Masaje con bambú" class="service-image">
+                <div class="service-content">
+                    <h3>Masaje con bambú</h3>
+                    <p>Esta es una descripción de la opción en cuestión .....</p>
+                    <div class="service-footer">
+                        <span class="price">$58</span>
+                        <button class="btn-reservar">RESERVAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation-form">
             <form action="/reservar" method="post">
-                <label for="nombre">NOMBRE COMPLETO:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <div class="form-group">
+                    <label for="reserva">RESERVA TU CITA:</label>
+                    <input type="text" id="reserva" name="reserva" required>
+                </div>
 
-                <label for="email">CORREO ELECTRÓNICO:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="codigo">CÓDIGO PROMOCIONAL:</label>
+                    <input type="text" id="codigo" name="codigo" placeholder="CÓDIGO">
+                </div>
 
-                <label for="telefono">TELÉFONO:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="fecha">FECHA DE RESERVA:</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <label for="codigo">CÓDIGO PROMOCIONAL:</label>
-                <input type="text" id="codigo" name="codigo" placeholder="CÓDIGO">
-
-                <button type="submit">RESERVAR</button>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
+        </section>
+
+        <section class="membership">
+            <h2 class="membership-title">Hazte socio y prueba nuestros beneficios</h2>
+            <div class="membership-plans">
+                <div class="plan-card">
+                    <img src="images/plate.png" alt="Plan Plate" class="plan-icon">
+                    <h3>PLATE</h3>
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Tratamientos faciales</li>
+                    </ul>
+                    <button class="btn-condiciones">VER CONDICIONES</button>
+                </div>
+
+                <div class="plan-card">
+                    <img src="images/gold.png" alt="Plan Gold" class="plan-icon">
+                    <h3>GOLD</h3>
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Piscina</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                    <button class="btn-condiciones">VER CONDICIONES</button>
+                </div>
+
+                <div class="plan-card">
+                    <img src="images/premium.png" alt="Plan Premium" class="plan-icon">
+                    <h3>PREMIUM</h3>
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                    <button class="btn-condiciones">VER CONDICIONES</button>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="#">POLÍTICAS</a></li>
-                <li><a href="#">TÉRMINOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
-                <li><a href="#">REDES SOCIALES</a></li>
-            </ul>
-        </nav>
+        <div class="footer-links">
+            <a href="#">Políticas de cookies</a>
+            <a href="#">Aviso legal</a>
+            <a href="#">Protección de datos</a>
+            <a href="#">Mapa del sitio</a>
+        </div>
+        <div class="social">
+            <p>SÍGUENOS EN</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <img src="images/rs_facebook.png" alt="Facebook">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="images/rs_twitter.png" alt="Twitter">
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <img src="images/rs_youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
