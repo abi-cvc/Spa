@@ -1,0 +1,319 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Romanesco&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de colores */
+:root {
+    --color-primary: #A3A656;
+    --color-dark: #384001;
+    --color-light: #FFEFDF;
+    --color-bg: #F2F6F6;
+    --color-text-gray: #9E9A9A;
+    --color-hover: #FFFF00;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: #000;
+}
+
+/* Tipografía */
+.titulo-1, h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.titulo-2, h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.texto-normal, p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.texto-menu, nav a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.texto-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.texto-miniatura {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-text-gray);
+}
+
+.romanesco {
+    font-family: 'Romanesco', cursive;
+    font-weight: 400;
+    font-size: 96px;
+}
+
+/* Header */
+header {
+    background-color: var(--color-light);
+    padding: 20px 50px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--color-hover);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section {
+    padding: 50px;
+}
+
+/* Sección Hero */
+main > section:first-of-type {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+main > section:first-of-type h1 {
+    margin-bottom: 30px;
+    color: var(--color-dark);
+}
+
+main > section:first-of-type h2 {
+    color: var(--color-dark);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Formulario de Reserva */
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+form label:first-of-type {
+    margin-top: 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form input::placeholder {
+    color: var(--color-text-gray);
+}
+
+/* Botones */
+button[type="submit"],
+.btn-reservar,
+.btn-condiciones {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover,
+.btn-reservar:hover,
+.btn-condiciones:hover {
+    background-color: var(--color-dark);
+}
+
+/* Botón Aceptar */
+.btn-aceptar {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aceptar:hover {
+    background-color: var(--color-dark);
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.card {
+    width: 233px;
+    background-color: #fff;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 233px;
+    height: 255px;
+    background-color: var(--color-light);
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-gray);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-light);
+    padding: 30px 50px;
+    margin-top: 100px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: var(--color-hover);
+}
+
+/* Espaciados */
+.spacing-70 {
+    margin-bottom: 70px;
+}
+
+.spacing-100 {
+    margin-bottom: 100px;
+}
+
+.spacing-134 {
+    margin-bottom: 134px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main > section {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
